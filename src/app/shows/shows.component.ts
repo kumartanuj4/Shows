@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 
 export class ShowsComponent implements OnInit {   
-  title = "Tv Shows";
+  title = "List of TV SHOWS";
   shows: Show[];
   // selectedShow: Show;
 

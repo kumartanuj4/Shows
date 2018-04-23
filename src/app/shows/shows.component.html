@@ -12,13 +12,13 @@
     <div class="col-sm-6" style="padding-top: 15px; text-align: right;">
       <!-- <input type="text"  class="hometxt"/> -->
 
-      <input type="text" [(ngModel)]= "title" placeholder="title" />
+      <input type="text" [(ngModel)]= "tile" placeholder="title" />
     </div>
   </div>
   </div>
     <div class="container-fluid" style="margin-top: 0.5%;">
       <div class=" row transbox">
-          <div class="col-sm-4 col-xs-12" *ngFor="let show of shows | search: title ">
+          <div class="col-sm-4 col-xs-12" *ngFor="let show of shows | search: tile ">
               <!-- <div class="col-sm-3 col-md-4" *ngFor="let show of shows" (click)="onSelect(show)"> -->
             <img src="assets/{{ show.poster}}"/>
             <!-- <img [src]="show.poster "> -->
