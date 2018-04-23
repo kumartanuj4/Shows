@@ -1,0 +1,39 @@
+
+<div class="container-fluid">
+  <div class="row transbox">
+    <div class="col-sm-2">
+        <!-- <button type="submit" (click)="previousState()" class="btn btn-success btn-arrow-left">Go back</button> -->
+        <a routerLink="/home"><button type="submit" class="btn btn-success btn-arrow-left">Go back</button></a>
+        <!-- <button type="submit" class="btn btn-warning btn-arrow-right">Warning</button> -->
+    </div>
+    <div class="col-sm-4">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="col-sm-6" style="padding-top: 15px; text-align: right;">
+      <!-- <input type="text"  class="hometxt"/> -->
+
+      <input type="text" [(ngModel)]= "title" placeholder="title" />
+    </div>
+  </div>
+  </div>
+    <div class="container-fluid" style="margin-top: 0.5%;">
+      <div class=" row transbox">
+          <div class="col-sm-4 col-xs-12" *ngFor="let show of shows | search: title ">
+              <!-- <div class="col-sm-3 col-md-4" *ngFor="let show of shows" (click)="onSelect(show)"> -->
+            <img src="assets/{{ show.poster}}"/>
+            <!-- <img [src]="show.poster "> -->
+            <a routerLink="/detail/{{show.id}}">
+             <h5> {{show.title}}</h5></a>
+             <p>{{show.year}}</p>
+             <p>{{show.description}}</p>
+             <!-- <p>{{show.trailer}}</p> -->
+          </div>
+      </div>
+    </div>
+
+    <!-- <app-show-details [show]="selectedShow"></app-show-details> -->
+
+   
+  
+    
+    

@@ -1,0 +1,41 @@
+.transbox{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: #000080;
+}
+
+div.transbox {
+    background-color: coral;
+    opacity: 0.8;
+    border-width:5px;  
+    border-style:initial;
+}
+
+.hometxt {
+  width: 50%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 0px 0 8px 0;
+}
+
+.cont {
+    margin: 90px auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+div.contt {
+    font-family: 'Bree Serif', serif;
+    padding: 5px;
+  
+  }
+
+  div.roww {
+
+    padding: 0 10px 10px 0;
+ }
