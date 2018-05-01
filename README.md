@@ -1,7 +1,7 @@
 # TvshowGuide
 steps to run this app on your IDE(VS Code);
 
-Simplly clone it for gitthub by using git cone command;
+Simplly clone it for gitthub by using git clone command;
 
 run npm install;
 
