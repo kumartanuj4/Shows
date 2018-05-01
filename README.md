@@ -1,4 +1,10 @@
 # TvshowGuide
+steps to run this app on your IDE(VS Code)
+Simplly clone it for gitthub by using git cone command
+run npm install
+after installing all node modules
+Hit ng-serve commad with a specified port value to review the template
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
