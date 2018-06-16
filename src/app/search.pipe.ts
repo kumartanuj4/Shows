@@ -50,7 +50,7 @@
 
 import { Injectable, Pipe, PipeTransform } from '@angular/core';
 import {  Show } from '../app/show'
-import { SHOWS } from '../app/mock-shows';
+// import { SHOWS } from '../app/mock-shows';
 
 @Pipe({
   name: 'search'
@@ -63,7 +63,7 @@ export class SearchPipe implements PipeTransform {
       if(input) {
         input = input.toLowerCase();
         return value.filter(function (el: any){
-          return el.title.toLowerCase().indexOf(input) > -1;
+          return el.show_title.toLowerCase().indexOf(input) > -1;
         })
       }
       return value;

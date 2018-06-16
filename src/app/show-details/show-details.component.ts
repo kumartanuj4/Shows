@@ -24,15 +24,20 @@ export class ShowDetailsComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.getShows();
-
+    // this.getShow();
+    let _id = this.route.snapshot.params['_id'];
+    this.showService.getShow(_id).subscribe(
+         (DShow) => this.show = DShow,
+         (error) => {console.log(error);
+         }
+    );
   }
 
-  getShows(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.showService.getShow(id)
-      .subscribe(show => this.show = show);
-  }
+  // getShow(): void {
+  //   const id = +this.route.snapshot.paramMap.get('_id');
+  //   this.showService.getShow(id)
+  //     .subscribe(show => this.show = show);
+  // }
    
 
 }

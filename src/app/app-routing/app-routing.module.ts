@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
+import { LoginComponent } from '../login/login.component';
+import { SignupComponent } from "../signup/signup.component";
 import { ShowsComponent } from '../shows/shows.component';
 import { HomeComponent } from '../home/home.component';
 import { ShowDetailsComponent } from '../show-details/show-details.component';
@@ -11,9 +12,11 @@ import { ShowDetailsComponent } from '../show-details/show-details.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent},
+  { path: 'signup', component: SignupComponent},
   { path: 'home', component: HomeComponent },
   { path: 'shows', component: ShowsComponent },
-  { path: 'detail/:id', component: ShowDetailsComponent }
+  { path: 'detail/:_id', component: ShowDetailsComponent }
   // { path: 'pipe', component: ShowSearchComponent }
   // { path: 'child', component: ChildComponent }
 
